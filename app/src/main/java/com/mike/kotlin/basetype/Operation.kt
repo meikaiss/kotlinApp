@@ -1,9 +1,30 @@
 package com.mike.kotlin.basetype
 
 /**
+ * 运算符
  * Created by meikai on 2019/11/21.
  */
 class Operation {
+
+
+    /**
+     * 浮点数比较
+     */
+    fun floatCompare(){
+        var a = 12.34f
+        var b = 101.134f
+
+        a == b
+        a != b
+        a < b
+        a > b
+        a <= b
+        a >= b
+
+        var x = 47.991f
+        x in a..b
+        x !in a..b
+    }
 
 
     /**
