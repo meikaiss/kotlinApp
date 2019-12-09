@@ -3,6 +3,7 @@ package com.mike.kotlin.mordern
 import android.content.Context
 
 /**
+ * 初始化时有入参的单例
  * Created by meikai on 2019/11/27.
  */
 class SingleInstance2 private constructor(context: Context) {
