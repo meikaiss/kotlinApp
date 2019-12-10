@@ -7,6 +7,22 @@ class ForDemo {
 
     fun forControl() {
 
+        for (i in 1..1000) {
+            if (i == 100) {
+                continue
+            } else {
+                println(i)
+            }
+        }
+
+        for (i in 1..1000) {
+            if (i == 100) {
+                break
+            } else {
+                println(i)
+            }
+        }
+
         continueLabel@ for (i in 1..1000) {
             if (i % 2 == 0) {
                 continue@continueLabel  //偶数跳过本次循环
