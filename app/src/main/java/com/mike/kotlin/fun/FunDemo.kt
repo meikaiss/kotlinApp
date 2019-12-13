@@ -24,4 +24,12 @@ class FunDemo {
         println("sum of $a and $b is ${a + b}")
     }
 
+
+    fun foo(bar: Int = 0, baz: Int = 1, qux: () -> Unit) { /*……*/ }
+
+    fun demo(){
+        foo(1) { println("hello") }     // 使用默认值 baz = 1
+        foo(qux = { println("hello") }) // 使用两个默认值 bar = 0 与 baz = 1
+        foo { println("hello") }        // 使用两个默认值 bar = 0 与 baz = 1
+    }
 }

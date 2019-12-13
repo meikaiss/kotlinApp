@@ -1,9 +1,9 @@
-package com.mike.kotlin.control
+package com.mike.kotlin.`fun`
 
 /**
  * Created by meikai on 2019/11/27.
  */
-class FunDemo {
+class FunDemo1 {
 
     //定义一个函数变量，此变量表示一个无入参且无返回的函数
     var logFun: (() -> Unit)? = null
@@ -40,6 +40,20 @@ class FunDemo {
 
         //调用方式二:
         moreClick()
+    }
+
+
+    /**
+     * 为指定的类扩展一个方法
+     * 返回字符串的指定位置的char
+     */
+    var specifyCharFun: String.(Int) -> Char = { index ->
+        this[index]
+    }
+
+    fun demo() {
+        val name = "meikai"
+        println(name.specifyCharFun(2)) // 打印 "i"
     }
 
 }
