@@ -9,7 +9,7 @@ class FunDemo1 {
     var logFun: (() -> Unit)? = null
 
     //定义时立即 构造
-    var logFun2: (() -> Unit) = {
+    var logFun2: () -> Unit = {
         print("haha")
     }
 
